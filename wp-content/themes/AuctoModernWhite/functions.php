@@ -96,6 +96,9 @@ function auctocreation_enqueue_assets()
 	// IP Services mobile styles
 	wp_enqueue_style('ip-mobile-styles', get_template_directory_uri() . '/css/ip-mobile-styles.css', array('header-styles'), wp_get_theme()->get('Version'));
 
+	// Contact Footer styles
+	wp_enqueue_style('contact-footer', get_template_directory_uri() . '/css/contact-footer.css', array('header-styles'), wp_get_theme()->get('Version'));
+
 	// JavaScript files
 	wp_enqueue_script('bootstrap-5-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), '5.3.3', true);
 

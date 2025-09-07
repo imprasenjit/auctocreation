@@ -1,5 +1,56 @@
     </main>
 
+    <!-- Modern Contact Footer Section -->
+    <section class="modern-contact-footer">
+    	<div class="container">
+    		<div class="contact-footer-content">
+    			<div class="row g-4 align-items-center">
+    				<!-- Contact Info -->
+    				<div class="col-lg-4">
+    					<div class="contact-item">
+    						<div class="contact-icon">
+    							<i class="fas fa-map-marker-alt"></i>
+    						</div>
+    						<div class="contact-details">
+    							<h5>Visit Us</h5>
+    							<p>Aucto Creation 11, Janaki path<br>Ganeshguri Guwahati-781006</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<!-- Phone Info -->
+    				<div class="col-lg-4">
+    					<div class="contact-item">
+    						<div class="contact-icon">
+    							<i class="fas fa-phone"></i>
+    						</div>
+    						<div class="contact-details">
+    							<h5>Call Us</h5>
+    							<p><a href="tel:0361-3139121" class="contact-link">0361-3139121</a></p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<!-- Email Info -->
+    				<div class="col-lg-4">
+    					<div class="contact-item">
+    						<div class="contact-icon">
+    							<i class="fas fa-envelope"></i>
+    						</div>
+    						<div class="contact-details">
+    							<h5>Email Us</h5>
+    							<p>
+    								<a href="mailto:auctocreation@gmail.com" class="contact-link">auctocreation@gmail.com</a><br>
+    								<a href="mailto:info@auctocreation.com" class="contact-link">info@auctocreation.com</a>
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
     <!-- Modern Minimalist Footer -->
     <footer class="modern-minimalist-footer" role="contentinfo">
     	<div class="container">

@@ -308,7 +308,7 @@
     position: absolute;
     width: 4px;
     height: 4px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     animation: floatParticle 20s linear infinite;
     opacity: 0.6;
@@ -450,7 +450,7 @@
     right: 20px;
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -468,7 +468,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     opacity: 0;
     animation: pulse 2s ease-in-out infinite;
@@ -548,7 +548,7 @@
 }
 
 .festival-type-badge span {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     color: white;
     padding: 6px 16px;
     border-radius: 20px;
@@ -579,7 +579,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 2px;
 }
 
@@ -614,7 +614,7 @@
 
 .meta-item i,
 .festival-category i {
-    color: var(--primary-color);
+    color: var(--color-gradient-start);
     font-size: 0.9rem;
 }
 
@@ -650,16 +650,16 @@
     z-index: 2;
 }
 
-.cta-title {
+/* .cta-title {
     font-size: 2.2rem;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 16px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 .cta-description {
     font-size: 1.2rem;
@@ -671,7 +671,7 @@
 }
 
 .btn-gradient {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border: none;
     color: white;
     padding: 16px 32px;
@@ -699,7 +699,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50px;
     opacity: 0;
     z-index: -1;
@@ -756,7 +756,7 @@
 .fallback-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1010,7 +1010,7 @@
     position: absolute;
     width: 4px;
     height: 4px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     animation: floatParticle 20s linear infinite;
     opacity: 0.6;
@@ -1152,7 +1152,7 @@
     right: 20px;
     width: 56px;
     height: 56px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1170,7 +1170,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     opacity: 0;
     animation: pulse 2s ease-in-out infinite;
@@ -1250,7 +1250,7 @@
 }
 
 .ip-type-badge span {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     color: white;
     padding: 6px 16px;
     border-radius: 20px;
@@ -1281,7 +1281,7 @@
     top: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 2px;
 }
 
@@ -1316,7 +1316,7 @@
 
 .meta-item i,
 .ip-status i {
-    color: var(--primary-color);
+    color: var(--color-gradient-start);
     font-size: 0.9rem;
 }
 
@@ -1358,7 +1358,7 @@
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 16px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1367,7 +1367,7 @@
 .services-line {
     width: 80px;
     height: 4px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     margin: 0 auto;
     border-radius: 2px;
 }
@@ -1424,7 +1424,7 @@
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1442,7 +1442,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     opacity: 0;
     z-index: -1;
@@ -1485,7 +1485,7 @@
 .decoration-element {
     width: 8px;
     height: 8px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
 }
 
@@ -1538,7 +1538,7 @@
 .fallback-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1567,4 +1567,5 @@
     margin: 0;
 }
 
-   
+    
+ 
