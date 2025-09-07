@@ -1,0 +1,78 @@
+/* AuctoModern Debug CSS - Remove after testing */
+
+/* Force visibility of all elements */
+* {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Make navigation highly visible for testing */
+.navbar,
+.modern-nav {
+    background: #ff0000 !important;
+    /* Red background for testing */
+    color: #ffffff !important;
+    padding: 20px !important;
+    position: relative !important;
+    /* Remove fixed positioning for testing */
+    display: block !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
+
+.navbar-nav {
+    display: flex !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar-nav li {
+    display: inline-block !important;
+    margin: 0 10px !important;
+}
+
+.navbar-nav a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 10px !important;
+    display: block !important;
+}
+
+/* Make body content visible */
+body {
+    font-family: Arial, sans-serif !important;
+    font-size: 16px !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Make sure all text is visible */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+    color: #000000 !important;
+    font-family: Arial, sans-serif !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Force buttons to be visible */
+.btn {
+    background: #007cba !important;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+}

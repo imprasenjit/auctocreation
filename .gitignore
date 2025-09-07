@@ -1,0 +1,103 @@
+# WordPress Core Files
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-admin/
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+/wp-config.php
+/wp-cron.php
+/wp-includes/
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+# WordPress Configuration
+wp-config.php
+wp-config-sample.php
+
+# WordPress Content - Exclude everything except themes
+/wp-content/*
+!/wp-content/themes/
+
+# But exclude default WordPress themes (keep only custom themes)
+/wp-content/themes/twenty*/
+
+# Database and Backup Files
+*.sql
+*.sql.gz
+*.sql.bz2
+prasecte_auctocreation.sql.gz
+
+# Upload Files
+/wp-content/uploads/
+/wp-content/uploads.zip
+
+# Plugin Files  
+/wp-content/plugins/
+
+# Cache and Upgrade Files
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/blogs.dir/
+
+# WordPress Security Files
+.htaccess
+.htpasswd
+
+# Server and Environment Files
+.well-known/
+error_log
+access_log
+
+# Development and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (if using build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# WordPress debug log
+debug.log
+wp-content/debug.log

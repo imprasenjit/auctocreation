@@ -1,0 +1,454 @@
+/*
+Theme Name: WizcraftPro
+Description: A premium corporate event management theme inspired by Wizcraft's design. Features clean typography, professional layout, and corporate-focused styling for event management companies.
+Author: Hiranya Sarma/Netrotrechnologies.com  
+Author URI: netrotechnologies.com/projects/hiranya
+Version: 1.0
+Template: auctocreation
+*/
+
+/* Import Wizcraft-style fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* Wizcraft Color Palette */
+:root {
+    /* Primary Colors - Professional Corporate */
+    --primary-color: #1a1a1a;
+    --primary-dark: #000000;
+    --primary-light: #333333;
+
+    /* Accent Colors - Wizcraft Style */
+    --accent-color: #ff6b00;
+    --accent-dark: #e55a00;
+    --accent-light: #ff8533;
+
+    /* Secondary Colors - Professional Palette */
+    --secondary-color: #f8f9fa;
+    --secondary-dark: #e9ecef;
+    --secondary-light: #ffffff;
+
+    /* Wizcraft Specific Colors */
+    --wizcraft-orange: #ff6b00;
+    --wizcraft-dark: #1a1a1a;
+    --wizcraft-light: #f8f9fa;
+    --wizcraft-gray: #6c757d;
+    --wizcraft-border: #dee2e6;
+
+    /* Neutral Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --light-gray: #f8f9fa;
+    --medium-gray: #6c757d;
+    --dark-gray: #495057;
+
+    /* Typography - Wizcraft Style */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-secondary: 'Playfair Display', Georgia, serif;
+    --font-accent: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Spacing - Corporate Professional */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4.5rem;
+
+    /* Border Radius - Clean Professional */
+    --border-radius: 4px;
+    --border-radius-lg: 8px;
+    --border-radius-xl: 12px;
+
+    /* Shadows - Subtle Professional */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.1);
+
+    /* Transitions - Smooth Professional */
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Alpha Colors */
+    --primary-color-alpha: rgba(26, 26, 26, 0.1);
+    --accent-color-alpha: rgba(255, 107, 0, 0.1);
+}
+
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--white);
+    overflow-x: hidden;
+    padding-top: 80px;
+    /* Account for fixed navigation */
+}
+
+/* Typography - Wizcraft Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-extrabold);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+h6 {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-medium);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+    color: var(--medium-gray);
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+a:hover {
+    color: var(--accent-dark);
+}
+
+/* Buttons - Wizcraft Style */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.95rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-base);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: var(--white);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline:hover {
+    background: var(--accent-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: var(--white);
+}
+
+/* Professional Card Component */
+.wizcraft-card {
+    background: var(--white);
+    border: 1px solid var(--wizcraft-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.wizcraft-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.wizcraft-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-color);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.wizcraft-card:hover::before {
+    opacity: 1;
+}
+
+/* Navigation Styles - Wizcraft Professional */
+.wizcraft-nav {
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    transition: all var(--transition-base);
+    padding: 0.75rem 0;
+}
+
+.wizcraft-nav.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Navbar Brand - Wizcraft Style */
+.navbar-brand {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    font-size: 1.75rem;
+    transition: all var(--transition-base);
+}
+
+.navbar-brand:hover {
+    color: var(--accent-color) !important;
+}
+
+.brand-text .brand-name {
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.brand-text .brand-tagline {
+    font-size: 0.75rem;
+    color: var(--medium-gray);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-normal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navbar Navigation - Professional */
+.navbar-nav .nav-item {
+    margin: 0 0.25rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color) !important;
+    padding: 0.75rem 1rem !important;
+    transition: all var(--transition-base);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width var(--transition-base);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Dropdown Menu - Professional */
+.navbar-nav .dropdown-menu {
+    border: 1px solid var(--wizcraft-border);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius-lg);
+    background: var(--white);
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+}
+
+.navbar-nav .dropdown-item {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    transition: all var(--transition-base);
+    font-weight: var(--font-weight-normal);
+}
+
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus {
+    background: var(--light-gray);
+    color: var(--accent-color);
+}
+
+/* Mobile Toggle - Professional */
+.navbar-toggler {
+    border: 1px solid var(--wizcraft-border);
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: var(--border-radius);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon {
+    background: var(--primary-color);
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: all var(--transition-base);
+}
+
+.navbar-toggler-icon::before {
+    top: -7px;
+}
+
+.navbar-toggler-icon::after {
+    bottom: -7px;
+}
+
+/* Mobile Menu - Professional */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: var(--white);
+        box-shadow: var(--shadow-md);
+        border-radius: var(--border-radius-lg);
+        margin-top: 1rem;
+        padding: 2rem 1rem;
+        border: 1px solid var(--wizcraft-border);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: left;
+        padding: 1rem 0 !important;
+        border-bottom: 1px solid var(--wizcraft-border);
+    }
+
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
+
+/* Section Spacing - Professional */
+.section {
+    padding: var(--spacing-xxl) 0;
+}
+
+.section-alt {
+    background: var(--light-gray);
+}
