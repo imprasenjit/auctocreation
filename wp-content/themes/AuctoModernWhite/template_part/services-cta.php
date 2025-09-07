@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="cta-stats mt-5" data-aos="fade-up" data-aos-delay="600">
+            <!-- <div class="cta-stats mt-5" data-aos="fade-up" data-aos-delay="600">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6 mb-4">
                         <div class="stat-box">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -147,7 +147,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+        background: linear-gradient(135deg, #00802f0d 0%, #0091aa0d 100%);
     }
 
     .cta-container {
@@ -164,7 +164,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
         color: white;
         padding: 8px 20px;
         border-radius: 25px;
@@ -180,7 +180,7 @@
     }
 
     .gradient-text {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -216,7 +216,7 @@
     }
 
     .action-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
         padding: 30px;
         border-radius: 20px;
         text-align: center;
@@ -244,7 +244,7 @@
 
     .action-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 15px 40px #00802f4d;
     }
 
     .card-icon {
@@ -313,18 +313,18 @@
     }
 
     .btn-secondary {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        background: linear-gradient(135deg, var(--color-gradient-end) 0%, var(--color-gradient-start) 100%);
         color: white;
     }
 
     .btn-secondary:hover {
         transform: translateY(-2px);
         color: white;
-        box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
+        box-shadow: 0 5px 15px #0091aa66;
     }
 
     .cta-stats {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, var(--color-gradient-start) 0%, var(--color-gradient-end) 100%);
         border-radius: 20px;
         padding: 50px;
         margin-top: 50px;
@@ -359,9 +359,9 @@
     .stat-number {
         font-size: 3rem;
         font-weight: 800;
-        color: #f093fb;
+        color: var(--color-gradient-end);
         margin-bottom: 10px;
-        text-shadow: 0 2px 10px rgba(240, 147, 251, 0.3);
+        text-shadow: 0 2px 10px #0091aa4d;
     }
 
     .stat-label {

@@ -105,7 +105,7 @@
 </div>
 
 <style>
-    .site-main section {
+    .site-main .banner-section {
         height: 515px;
     }
 

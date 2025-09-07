@@ -1,0 +1,246 @@
+/* Mobile Responsive Styles for IP Services */
+@media (max-width: 991.98px) {
+    .ultra-modern-ip-services {
+        padding: 80px 0;
+    }
+
+    .revolutionary-ip-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .ultra-ip-card {
+        height: 420px;
+    }
+
+    .ip-content {
+        padding: 24px 20px;
+    }
+
+    .ip-services-showcase {
+        margin-top: 60px;
+        padding: 40px 24px;
+    }
+
+    .services-title {
+        font-size: 1.8rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .service-card {
+        padding: 32px 24px;
+    }
+
+    .service-content {
+        gap: 20px;
+    }
+
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ultra-modern-ip-services {
+        padding: 60px 0;
+    }
+
+    .revolutionary-ip-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ultra-ip-card {
+        height: 380px;
+    }
+
+    .ip-image-container {
+        height: 180px;
+    }
+
+    .ip-floating-badge {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+        top: 16px;
+        right: 16px;
+    }
+
+    .ip-content {
+        padding: 20px 18px;
+    }
+
+    .ip-title {
+        font-size: 1.2rem;
+    }
+
+    .ip-services-showcase {
+        margin-top: 40px;
+        padding: 32px 20px;
+        border-radius: 24px;
+    }
+
+    .services-header {
+        margin-bottom: 36px;
+    }
+
+    .services-title {
+        font-size: 1.6rem;
+    }
+
+    .service-card {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .service-content {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 1.6rem;
+    }
+
+    .modern-fallback-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .fallback-card {
+        padding: 32px 24px;
+        border-radius: 20px;
+    }
+
+    .fallback-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 1.6rem;
+    }
+
+    .fallback-card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .ultra-modern-ip-services {
+        padding: 40px 0;
+    }
+
+    .ultra-ip-card {
+        height: 360px;
+        border-radius: 20px;
+    }
+
+    .ip-card-inner {
+        border-radius: 20px;
+    }
+
+    .ip-image-container {
+        height: 160px;
+    }
+
+    .ip-floating-badge {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+        top: 12px;
+        right: 12px;
+    }
+
+    .ip-content {
+        padding: 18px 16px;
+    }
+
+    .ip-title {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .ip-type-badge span {
+        padding: 4px 12px;
+        font-size: 0.7rem;
+        border-radius: 16px;
+    }
+
+    .highlight-text {
+        font-size: 0.9rem;
+        margin-left: 16px;
+    }
+
+    .ip-meta {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .meta-item,
+    .ip-status {
+        font-size: 0.8rem;
+    }
+
+    .ip-services-showcase {
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .services-title {
+        font-size: 1.4rem;
+    }
+
+    .service-card {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .service-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.4rem;
+    }
+
+    .service-text h5 {
+        font-size: 1.1rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+
+    .fallback-card {
+        padding: 28px 20px;
+        border-radius: 18px;
+    }
+
+    .fallback-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .fallback-card h4 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .fallback-card p {
+        font-size: 0.9rem;
+    }
+}

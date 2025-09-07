@@ -33,7 +33,7 @@ get_header();
 <main id="main" class="site-main services-page" role="main">
 
     <!-- Services Hero Banner -->
-    <section id="services-hero" class="full-width-section">
+    <section id="services-hero" class="full-width-section banner-section">
         <?php get_template_part('template_part/services-hero'); ?>
     </section>
 
@@ -51,19 +51,22 @@ get_header();
 
     <!-- Corporate Events Section -->
     <section id="corporate-events" class="service-section full-width-section">
-        <?php get_template_part('template_part/corporate-events', 'services'); ?>
+        <?php //get_template_part('template_part/corporate-events', 'services'); 
+        ?>
     </section>
 
     <!-- Exhibition Section -->
     <section id="exhibition" class="service-section contained-section">
         <div class="site-contained">
-            <?php get_template_part('template_part/exhibition', 'services'); ?>
+            <?php //get_template_part('template_part/exhibition', 'services'); 
+            ?>
         </div>
     </section>
 
     <!-- Brand Activation Section -->
     <section id="brand-activation" class="service-section full-width-section">
-        <?php get_template_part('template_part/brand-activation', 'services'); ?>
+        <?php //get_template_part('template_part/brand-activation', 'services'); 
+        ?>
     </section>
 
     <!-- Services CTA Section -->
