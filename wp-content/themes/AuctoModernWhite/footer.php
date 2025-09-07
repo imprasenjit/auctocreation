@@ -117,7 +117,76 @@
     		mirror: false
     	});
 
-    	// Modern Navigation Scroll Effect
+    	// Typing Animation Script
+    	document.addEventListener('DOMContentLoaded', function() {
+    		const typingLine = document.querySelector('.typing-line');
+    		if (!typingLine) return;
+
+    		const textElement = typingLine.querySelector('.typing-text');
+    		const cursor = typingLine.querySelector('.typing-cursor');
+
+    		// Make the line visible immediately
+    		typingLine.classList.add('active');
+
+    		// Get texts from data attribute
+    		const textsData = textElement.getAttribute('data-texts');
+    		const texts = textsData ? JSON.parse(textsData) : ['Welcome to Aucto Creation', 'Your Vision, Our Expertise', 'Creating Excellence Together'];
+    		let currentTextIndex = 0;
+    		let isDeleting = false;
+    		let currentText = '';
+    		let charIndex = 0;
+
+    		function typeEffect() {
+    			const fullText = texts[currentTextIndex];
+
+    			if (isDeleting) {
+    				// Remove characters
+    				currentText = fullText.substring(0, charIndex - 1);
+    				charIndex--;
+    			} else {
+    				// Add characters
+    				currentText = fullText.substring(0, charIndex + 1);
+    				charIndex++;
+    			}
+
+    			// Update the display
+    			textElement.textContent = currentText;
+
+    			// Smoother typing speeds with variable timing
+    			let typeSpeed;
+
+    			if (isDeleting) {
+    				// Faster deletion
+    				typeSpeed = Math.random() * 30 + 25; // 25-55ms
+    			} else {
+    				// More natural typing with slight variations
+    				typeSpeed = Math.random() * 50 + 60; // 60-110ms
+
+    				// Slower for punctuation and pauses
+    				const lastChar = currentText.slice(-1);
+    				if (lastChar === '.' || lastChar === ',' || lastChar === '!' || lastChar === '?') {
+    					typeSpeed += Math.random() * 200 + 150; // 150-350ms pause after punctuation
+    				} else if (lastChar === ' ') {
+    					typeSpeed += Math.random() * 50 + 25; // 25-75ms pause after spaces
+    				}
+    			}
+
+    			// If word is complete
+    			if (!isDeleting && charIndex === fullText.length) {
+    				// Longer pause at end of complete text
+    				typeSpeed = Math.random() * 1000 + 2500; // 2.5-3.5 seconds
+    				isDeleting = true;
+    			} else if (isDeleting && charIndex === 0) {
+    				// Move to next text
+    				isDeleting = false;
+    				currentTextIndex = (currentTextIndex + 1) % texts.length;
+    				typeSpeed = Math.random() * 300 + 400; // 400-700ms between texts
+    			}
+
+    			setTimeout(typeEffect, typeSpeed);
+    		} // Start the animation
+    		typeEffect();
+    	}); // Modern Navigation Scroll Effect
     	window.addEventListener('scroll', function() {
     		const navbar = document.querySelector('.modern-navbar .navbar');
     		if (window.scrollY > 50) {

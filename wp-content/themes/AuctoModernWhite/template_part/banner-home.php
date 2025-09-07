@@ -58,6 +58,18 @@ $slides = new WP_Query($args);
 		<?php endif; ?>
 	<?php endif; ?>
 
+	<!-- Typing Animation Overlay -->
+	<div class="typing-overlay container">
+		<div class="typing-content">
+			<div class="typing-container">
+				<div class="typing-line">
+					<span class="typing-text" data-texts='["Every Event is a New story for us...To script new endeavors...", "Events sprout from simple ideas, with Patronization...", "An Event.....that finally gets public acceptance, converts to a property... An Asset"]'></span>
+					<span class="typing-cursor">|</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- (Hero textual content moved outside of banner for layout adjustment) -->
 </section>
 
