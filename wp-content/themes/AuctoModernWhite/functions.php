@@ -90,6 +90,9 @@ function auctocreation_enqueue_assets()
 	// Main theme stylesheet (should be last)
 	wp_enqueue_style('auctocreation-style', get_stylesheet_uri(), array('bootstrap-5', 'font-awesome-6'), wp_get_theme()->get('Version'));
 
+	// Header mobile styles
+	wp_enqueue_style('header-styles', get_template_directory_uri() . '/css/header-styles.css', array('auctocreation-style'), wp_get_theme()->get('Version'));
+
 	// JavaScript files
 	wp_enqueue_script('bootstrap-5-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), '5.3.3', true);
 

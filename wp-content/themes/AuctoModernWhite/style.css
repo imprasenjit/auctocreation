@@ -5352,8 +5352,8 @@ section:last-child {
 .service-icon {
     width: 80px;
     height: 80px;
-    margin: 0 auto 24px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    /* margin: 0 auto 24px; */
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -6669,7 +6669,7 @@ section:last-child {
     }
 
     .client-logo {
-        max-height: 46px;
+        /* max-height: 46px; */
         max-width: 130px;
     }
 
@@ -7100,7 +7100,7 @@ section:last-child {
     width: 43px;
     height: 43px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
     display: flex;
     align-items: center;
     justify-content: center;
